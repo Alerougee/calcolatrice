@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="intestazione">
+            <b>Russo Alessandro</b>
+        </div>
+        
+        <input type="text" id="schermo" disabled value="0"/>
+
+        <div id="calcolatrice">
+            <div class="pulsante operatore complesso" onclick="sin()">sin</div>
+            <div class="pulsante operatore complesso" onclick="cos()">cos</div>
+            <div class="pulsante operatore complesso" onclick="tan()">tan</div>
+            <div class="pulsante operatore complesso" onclick="radice()">√</div>
+            
+            <div class="pulsante" onclick="aggiungi('1')">1</div>
+            <div class="pulsante" onclick="aggiungi('2')">2</div>
+            <div class="pulsante" onclick="aggiungi('3')">3</div>
+            <div class="pulsante operatore semplice" onclick="aggiungi('+')">+</div>
+            
+            <div class="pulsante" onclick="aggiungi('4')">4</div>
+            <div class="pulsante" onclick="aggiungi('5')">5</div>
+            <div class="pulsante" onclick="aggiungi('6')">6</div>
+            <div class="pulsante operatore semplice" onclick="aggiungi('-')">-</div>
+            
+            <div class="pulsante" onclick="aggiungi('7')">7</div>
+            <div class="pulsante" onclick="aggiungi('8')">8</div>
+            <div class="pulsante" onclick="aggiungi('9')">9</div>
+            <div class="pulsante operatore semplice" onclick="aggiungi('/')">/</div>
+            
+            <div class="pulsante" onclick="aggiungi('.')">.</div>
+            <div class="pulsante" onclick="aggiungi('0')">0</div>
+            <div class="pulsante operatore semplice" onclick="aggiungi('**')">^</div>
+            <div class="pulsante operatore semplice" onclick="aggiungi('*')">*</div>
+            
+            <div class="pulsante operatore" onclick="memoria()">M</div>
+            <div class="pulsante operatore" onclick="memoriastampa()">SM</div>
+            <div class="pulsante speciale" onclick="calcola()">=</div>
+            <div class="pulsante speciale" onclick="cancella()">C</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
